@@ -48,7 +48,7 @@ print(stringA)
 * String的拼接
 ```
 stringC = stringA + stringB
-stringD = stringA - 'xyz'❌
+stringD = stringA - 'xyz' ❌
 ```
 * String的subStr
 ```
@@ -59,4 +59,49 @@ subStr = stringA[1:-1]
 No.2-5
 subStr = stringA[1:]
 ```
+
+* iteration and iterator
+```
+strIter = iter(stringA)
+next(strIter)
+```
 * etc split(), join(), format() 比较简单就不一一展开
+
+
+### List(列表)
+#### Basic Define
+* List & numpy.array
+```
+# list中的元素类型可以随意组合，numpy.array()在不指定dtype时亦可随意组合，否则只能添加`指定类型元素`
+list_a = [1,2,3,4,5]
+list_b = [1,'23','xixi',2,45]
+list_c = list([1,2,3])
+array_b = np.array(list_b, dtype=int, ndmin=2) # error 'xixi' is not int()
+```
+* Mult-List & Mult-Array & Mult-Matrix (shape & reshape)
+
+```
+list_d = [[1,2,3],[4,5,6],[7,8,9]]
+array_d = np.array(list_d)
+matrix_d = np.matrix(list_d)
+
+print(list_d.shape) ❌
+print(array_d.shape) # (3,3)
+print(matrix.shape) # (3,3)
+
+array_d.shape = (1,9)
+matrix_d.shape = (2,4) ❌
+
+matrix_d.reshape(3,3)
+matrix_d = matrix_d.reshape(3,3)
+```
+
+* iteration and iterator
+```
+for item in list:
+for item in array:
+```
+
+* list append() and extend()
+* list remove() and clear()
+* list insert() pop() count() reserve() sort() copy()
