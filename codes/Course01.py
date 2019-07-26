@@ -99,3 +99,6 @@ def DictCode():
 StringCode()
 # ListCode()
 # DictCode()
+
+a = [12,2]
+print(a.index(12))

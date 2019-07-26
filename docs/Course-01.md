@@ -8,8 +8,8 @@
 * Int, float...
 * Boolean
 
-### Algorithm
-* leetcode 001: Two Sum
+### Algorithm Test
+* [leetcode 001: Two Sum](https://leetcode-cn.com/problems/two-sum/)
 
 ## Start
 * BeforeAll `python3.X`的变量原则上是`不需指定类型`的。在开发过程中为了`代码可读性`可以适当为函数变量及返回值加上类型。
@@ -133,3 +133,8 @@ dict_b = dict(food="bread",drink:"cola")
 tuple_a = ("c", 12, [1,2,3])
 print(tuple_a)
 ```
+
+### Two Sum
+#### Hint
+* how do you use one loop to finish this issuse?
+* what responsibility can you find between target and elements of list?
