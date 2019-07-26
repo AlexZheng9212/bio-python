@@ -85,10 +85,17 @@ def ListCode():
 
 
 
+def DictCode():
+    dict_a = {"name":"cai xixi", "age":12, "boyfriend":"me~"}
+    dict_a["name"] = "pigge"
+    print(dict_a["name"])
+
+    tuple_a = ("c", 12, [1,2,3])
+    print(tuple_a)
 
 
 
 
-
-
-ListCode()
+StringCode()
+# ListCode()
+# DictCode()

@@ -5,7 +5,6 @@
 * List
 * Dictionary
 * Tuple
-* File
 * Int, float...
 * Boolean
 
@@ -103,5 +102,34 @@ for item in array:
 ```
 
 * list append() and extend()
+```
+some different between append() and extend()
+base_list = [12,11,10]
+add_a = 1
+add_b = [2,3]
+base_list.append(add_a)
+base_list.append(add_b)
+base_list.extend(add_a)
+base_list.extend(add_b)
+```
 * list remove() and clear()
 * list insert() pop() count() reserve() sort() copy()
+
+### Dictionary & Tuple
+#### Basic Define
+* Dictionary
+```
+字典是带索引<key,value>的数据结构，在结构内key具有唯一性。如果含有多个同名key时，以最后一个<k,v>为准。
+也可以理解为Map映射
+dict_a = {"name": "fat cat", "age":12, "name":"cai xixi"}
+dict_a["name"] = "fat cat"
+dict_a.get("name")
+pop() -- remove
+clear() and delete()
+
+dict_b = dict(food="bread",drink:"cola")
+
+元组
+tuple_a = ("c", 12, [1,2,3])
+print(tuple_a)
+```
