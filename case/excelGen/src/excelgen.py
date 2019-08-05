@@ -29,3 +29,8 @@ def makeExcel():
   f=open('test.xlsx','w')
   f.close()
   return f
+
+def excelDecode(excelFile):
+  f = open(excelFile,'r')
+  lines = f.readlines()
+  print(lines)

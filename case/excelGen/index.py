@@ -1,4 +1,5 @@
-import utils
+import src.utils as utils
+import src.excelgen as excelgen
 class AppClass:
   def __init__(self, environ, start_response, REQUESTBODY):
     self.environ = environ
@@ -16,6 +17,7 @@ class AppClass:
 def handler(environ, start_response):
   requestBody = utils.getRequestBody(environ)
   print(requestBody)
-  requestBody = [{'a':'pppss','b':'ccc','c':'dd'},{'a':'pppss','b':'ccc','c':'dd'}]
+  # requestBody = [{'a':'pppss','b':'ccc','c':'dd'},{'a':'pppss','b':'ccc','c':'dd'}]
+  excelgen.excelDecode(requestBody)
   REQUESTBODY = utils.dict2byte(requestBody)
   return AppClass(environ, start_response, REQUESTBODY)
